@@ -1,5 +1,7 @@
 FROM m1mbert/cxlb-gnuradio-3.8:1.0
 
+RUN apt install net-tools
+
 RUN pip3 install --upgrade pip
 RUN pip3 install tensorflow==2.4.0
 
